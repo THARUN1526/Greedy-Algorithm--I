@@ -1,0 +1,53 @@
+This problem involves transferring a string through a network using a special protocol. The protocol allows two types of operations:
+
+1. Transfer 1 copy of a lowercase English alphabet character through the network.
+2. Transfer 2 copies of a lowercase English alphabet character through the network.
+
+The goal is to find the minimum time required to transfer the entire given string through the network.
+
+Here's an explanation of the input format:
+
+- The first line of input contains an integer T, representing the number of test cases.
+- For each test case, there are two lines of input:
+  - The first line contains an integer N, representing the length of the string S.
+  - The second line contains the string S.
+
+The output format should consist of T lines, each representing the minimum time required for a test case.
+
+Constraints:
+- 1 ≤ T ≤ 100: The number of test cases.
+- 1 ≤ N ≤ 105: The length of the string S.
+- The sum of N over all test cases does not exceed 105.
+- The string S contains lowercase English alphabet characters only.
+
+Example:
+
+Input:
+2
+5
+cbcdc
+6
+aabeee
+
+Output:
+5
+4
+
+Explanation:
+For the first test case, the string "cbcdc" can be transferred as follows:
+- Transfer 'c' once.
+- Transfer 'b' once.
+- Transfer 'c' twice.
+- Transfer 'd' once.
+
+Total time = 1 + 1 + 2 + 1 = 5
+
+For the second test case, the string "aabeee" can be transferred as follows:
+- Transfer 'a' twice.
+- Transfer 'b' once.
+- Transfer 'e' once.
+- Transfer 'e' once.
+
+Total time = 2 + 1 + 1 + 1 = 4
+
+The goal is to find the minimum time required to transfer the entire string by choosing the optimal number of copies to transfer for each character.
