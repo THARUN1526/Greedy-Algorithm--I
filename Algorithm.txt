@@ -1,0 +1,31 @@
+Here's a step-by-step explanation of the provided code:
+
+1. Read the number of test cases, `t`, from the input.
+
+2. Start a loop that iterates `t` times to handle each test case.
+
+3. For each test case, read the length of the string, `N`, from the input.
+
+4. Read the string, `S`, from the input.
+
+5. Initialize a variable `count` to keep track of the minimum time required to transfer the entire string.
+
+6. Start a loop that iterates over the characters in the string `S`. The loop variable `i` represents the index of the current character.
+
+7. Inside the loop, check if the current character `S[i]` is equal to the next character `S[i+1]`. This is done to determine if two consecutive characters are the same.
+
+8. If the characters are the same, increment `count` by 1 and skip the next character by incrementing `i` by 1. This is because two consecutive characters can be transferred together in one operation.
+
+9. If the characters are different, increment `count` by 1. This means that a single copy of the current character needs to be transferred.
+
+10. After the loop finishes, the value of `count` represents the minimum time required to transfer the entire string.
+
+11. Print the value of `count` for the current test case.
+
+12. Repeat steps 4-11 for each test case.
+
+13. End the program.
+
+The code calculates the minimum time required by counting the number of operations needed to transfer the string. Whenever two consecutive characters are the same, it counts as one operation, and otherwise, it counts as a separate operation. The final count is then printed for each test case.
+
+Note: The code assumes that the input strings are valid and don't contain any out-of-bounds accesses.
